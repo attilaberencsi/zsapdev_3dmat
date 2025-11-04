@@ -1,0 +1,29 @@
+{
+  "generationParameters": {
+    "generationDate": "Tue Nov 04 2025 08:49:52 GMT+0000 (Coordinated Universal Time)",
+    "generatorPlatform": "SAP Business Application Studio",
+    "serviceType": "SAP System (ABAP On-Premise)",
+    "metadataFilename": "",
+    "serviceUrl": "https://2c8e90d3-b4b0-4309-b7f8-a3e84f9c2f6e.abap.eu10.hana.ondemand.com/sap/opu/odata4/sap/zui_sapdev_material_o4/srvd/sap/zui_sapdev_material_o4/0001/",
+    "appName": "zsapdev3dpproduct",
+    "appTitle": "Material",
+    "appDescription": "3D Printer Components and Accessories",
+    "appNamespace": "com.sapdev.threed",
+    "ui5Theme": "sap_horizon",
+    "ui5Version": "1.136.8",
+    "enableCodeAssist": true,
+    "enableEslint": true,
+    "enableTypeScript": true,
+    "showMockDataInfo": true,
+    "generatorVersion": "1.19.3",
+    "template": "List Report Page V4",
+    "generatorName": "SAP Fiori Application Generator",
+    "entityRelatedConfig": [
+      {
+        "type": "Main Entity",
+        "value": "ZC_SAPDEV_Material"
+      }
+    ],
+    "launchText": "To launch the generated application, run the following from the generated application root folder:\n\n```\n    npm start\n```"
+  }
+}

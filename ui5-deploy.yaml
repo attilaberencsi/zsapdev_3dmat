@@ -1,0 +1,33 @@
+# yaml-language-server: $schema=https://sap.github.io/ui5-tooling/schema/ui5.yaml.json
+
+specVersion: "3.1"
+metadata:
+  name: com.sapdev.threed.zsapdev3dpproduct
+type: application
+builder:
+  customTasks:
+    - name: ui5-tooling-transpile-task
+      afterTask: replaceVersion
+      configuration:
+        debug: true
+        transformModulesToUI5:
+          overridesToOverride: true
+    - name: deploy-to-abap
+      afterTask: generateCachebusterInfo
+      configuration:
+        target:
+          destination: BAS_ABAP_DEV
+          url: https://2c8e90d3-b4b0-4309-b7f8-a3e84f9c2f6e.abap.eu10.hana.ondemand.com
+          scp: true
+          authenticationType: reentranceTicket # SAML support for vscode
+        app:
+          name: ZSAPDEV_3DM
+          description: 3D Printer Components and Accessories
+          package: ZSAPDEV_SAMPLE_UI_3D_PRINT
+          transport: H01K900002
+        exclude:
+          - /test/
+  resources:
+    excludes:
+      - /test/**
+      - /localService/**
