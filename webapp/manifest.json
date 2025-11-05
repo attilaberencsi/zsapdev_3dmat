@@ -153,6 +153,16 @@
               "editableHeaderContent": false,
               "contextPath": "/ZC_SAPDEV_Material",
               "content": {
+	              "header": {
+									"actions": {
+										"customHeaderActionShowMessage": {
+											"press": ".extension.com.sapdev.threed.zsapdev3dpproduct.ext.controller.ProductExt.GenerateTheBarCode",
+											"visible": true,
+											"enabled": true,
+											"text": "{i18n>showBarcode}"
+										}
+									}
+								},
                 "body": {
                   "sections": {
                     "BarCode": {

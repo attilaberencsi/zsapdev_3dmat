@@ -12,28 +12,32 @@ import MessageType from 'sap/ui/core/message/MessageType';
 import ODataContextBinding from 'sap/ui/model/odata/v4/ODataContextBinding';
 import Fragment from 'sap/ui/core/Fragment';
 
+/**
+ * @namespace com.sapdev.threed.zsapdev3dpproduct.ext.controller
+ * @controller
+ */
 export default class ProductExt extends ControllerExtension<ExtensionAPI> {
+
   static overrides = {
-    onInit: function (this: ProductExt) {
+    onInit(this: ProductExt) {
       // you can access the Fiori elements extensionAPI via this.base.getExtensionAPI
       const model = this.base.getExtensionAPI().getModel();
+      const extAPI = this.base.getExtensionAPI();
+
       //this.base.getView().byId("yourControlId");
     },
 
-    onAfterRendering: function () {
+    onAfterRendering() {
       //MessageToast.show("Hi");
-    },
-
-    /**
-    * Generated event handler.
-    *
-    * @param this reference to the 'this' that the event handler is bound to.
-    * @param context the context of the page on which the event was fired. `undefined` for list report page.
-    * @param selectedContexts the selected contexts of the table rows.
-    */
-    GenerateTheBarCode: function (this: ExtensionAPI, context: Context | undefined, selectedContexts: Context[]) {
-      MessageToast.show("Controller Extension Invoked");
     }
+  }
 
-  };
+  public GenerateTheBarCode(oContext: Context): void {
+    const oData = oContext.getObject();
+    MessageToast.show("Controller Extension Invoked");
+
+    const model = this.base.getExtensionAPI().getModel();
+    const extAPI = this.base.getExtensionAPI();
+  }
+
 }
