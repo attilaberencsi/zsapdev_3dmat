@@ -151,8 +151,31 @@
           "options": {
             "settings": {
               "editableHeaderContent": false,
-              "contextPath": "/ZC_SAPDEV_Material"
+              "contextPath": "/ZC_SAPDEV_Material",
+              "content": {
+                "body": {
+                  "sections": {
+                    "BarCode": {
+                      "template": "com.sapdev.threed.zsapdev3dpproduct.ext.fragment.BarCode",
+                      "position": {
+                        "placement": "After",
+                        "anchor": "GeneralInfo"
+                      },
+                      "title": "Barcode"
+                    }
+                  }
+                }
+              }
             }
+          }
+        }
+      }
+    },
+    "extends": {
+      "extensions": {
+        "sap.ui.controllerExtensions": {
+          "sap.fe.templates.ObjectPage.ObjectPageController": {
+            "controllerName": "com.sapdev.threed.zsapdev3dpproduct.ext.controller.ProductExt"
           }
         }
       }

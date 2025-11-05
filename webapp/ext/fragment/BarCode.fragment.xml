@@ -1,0 +1,5 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m" xmlns:macros="sap.fe.macros">
+	<VBox id="_IDGenVBox" core:require="{ handler: 'com/sapdev/threed/zsapdev3dpproduct/ext/fragment/BarCode'}">
+		<Button id="_IDGenButton" text="BarCode" press="handler.generateBarcode" />
+	</VBox>
+</core:FragmentDefinition>
