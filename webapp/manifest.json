@@ -184,7 +184,7 @@
     "extends": {
       "extensions": {
         "sap.ui.controllerExtensions": {
-          "sap.fe.templates.ObjectPage.ObjectPageController": {
+          "sap.fe.templates.ObjectPage.ObjectPageController#com.sapdev.threed.zsapdev3dpproduct::ZC_SAPDEV_MaterialObjectPage": {
             "controllerName": "com.sapdev.threed.zsapdev3dpproduct.ext.controller.ProductExt"
           }
         }
