@@ -1,20 +1,21 @@
 <core:FragmentDefinition
     xmlns:core="sap.ui.core"
     xmlns="sap.m"
-    xmlns:macros="sap.fe.macros"
     xmlns:html="http://www.w3.org/1999/xhtml"
 >
     <VBox
-        id="_IDGenVBox"
-        core:require="{ handler: 'com/sapdev/threed/zsapdev3dpproduct/ext/fragment/BarCode'}"
+        id="idGenVBox"
+        core:require="{
+            handler: 'com/sapdev/threed/zsapdev3dpproduct/ext/fragment/BarCode'
+        }"
     >
         <Button
-            id="_IDGenButton"
-            text="BarCode"
+            id="idGenerateBarCodeButton"
+            text="Generate"
             press="handler.generateBarcode"
         />
         <html:svg
-            id="barcode"
+            id="idsvg"
             width="200"
             height="100"
         />

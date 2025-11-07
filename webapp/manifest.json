@@ -102,7 +102,12 @@
       }
     },
     "resources": {
-      "css": []
+      "css": [],
+      "js": [
+        {
+          "uri": "lib/JsBarcode.all.min.js"
+        }
+      ]
     },
     "routing": {
       "config": {},

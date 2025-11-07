@@ -1,9 +1,8 @@
-import ControllerExtension from 'sap/ui/core/mvc/ControllerExtension';
-import ExtensionAPI from 'sap/fe/templates/ObjectPage/ExtensionAPI';
-import MessageToast from 'sap/m/MessageToast';
-import Context from 'sap/ui/model/odata/v4/Context';
-import UI5Element from 'sap/ui/core/Element';
-import JsBarcode from "../../types/JsBarcode";
+import ControllerExtension from "sap/ui/core/mvc/ControllerExtension";
+import ExtensionAPI from "sap/fe/templates/ObjectPage/ExtensionAPI";
+import MessageToast from "sap/m/MessageToast";
+import Context from "sap/ui/model/odata/v4/Context";
+import UI5Element from "sap/ui/core/Element";
 
 /**
  * @namespace com.sapdev.threed.zsapdev3dpproduct.ext.controller
@@ -20,7 +19,6 @@ export default class ProductExt extends ControllerExtension<ExtensionAPI> {
       const extAPI = this.base.getExtensionAPI();
       this._oVBox = this.base.byId("_IDGenVBox");
       //this.base.getView().byId("yourControlId");
-      
     },
 
     onAfterRendering(this: ProductExt) {

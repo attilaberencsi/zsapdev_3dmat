@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 import BaseComponent from "sap/fe/core/AppComponent";
 
 /**
@@ -17,20 +18,8 @@ export default class Component extends BaseComponent {
     public init(): void {
         super.init();
 
-        // Component.ts or app bootstrap code
-
-        sap.ui.loader.config({
-            paths: {
-                "JsBarcode": "lib/JsBarcode.all.min"
-            },
-            shim: {
-                "JsBarcode": {
-                    exports: "JsBarcode",
-                    deps: [],
-                    amd: false
-                }
-            }
-        });
+        // JsBarcode will be loaded via manifest.json resources
+        // and will be available globally as 'JsBarcode'
 
 
     }
