@@ -51,7 +51,8 @@ export function generateBarcode(this: ExtensionAPI): void {
         // Get the PartNumber from the context
         const partNumber = context?.getProperty("PartNumber") as string;
         if (!partNumber) {
-            throw new Error("PartNumber not found in context");
+            MessageToast.show("Maintain Part Number first");
+            return;
         }
 
         window.JsBarcode(barcodeHTMLElement, partNumber, {

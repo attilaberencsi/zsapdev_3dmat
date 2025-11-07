@@ -1,0 +1,32 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+>
+    <Dialog
+        id="idBarcodeDialog"
+        title="Barcode"
+    >
+        <content>
+            <VBox
+                id="idGen2VBox"
+                core:require="{
+                    handler: 'com/sapdev/threed/zsapdev3dpproduct/ext/fragment/BarCode'
+                }"
+            >
+                <html:svg
+                    id="idsvg"
+                    width="200"
+                    height="100"
+                />
+            </VBox>
+        </content>
+        <beginButton>
+            <Button
+                id="idCloseButton"
+                text="Close"
+                press=".onCloseBarcodeDialog"
+            />
+        </beginButton>
+    </Dialog>
+</core:FragmentDefinition>

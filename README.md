@@ -1,43 +1,21 @@
-## Application Details
-|               |
-| ------------- |
-|**Generation Date and Time**<br>Tue Nov 04 2025 08:49:52 GMT+0000 (Coordinated Universal Time)|
-|**App Generator**<br>SAP Fiori Application Generator|
-|**App Generator Version**<br>1.19.3|
-|**Generation Platform**<br>SAP Business Application Studio|
-|**Template Used**<br>List Report Page V4|
-|**Service Type**<br>SAP System (ABAP On-Premise)|
-|**Service URL**<br>https://2c8e90d3-b4b0-4309-b7f8-a3e84f9c2f6e.abap.eu10.hana.ondemand.com/sap/opu/odata4/sap/zui_sapdev_material_o4/srvd/sap/zui_sapdev_material_o4/0001/|
-|**Module Name**<br>zsapdev3dpproduct|
-|**Application Title**<br>Material|
-|**Namespace**<br>com.sapdev.threed|
-|**UI5 Theme**<br>sap_horizon|
-|**UI5 Version**<br>1.136.8|
-|**Enable Code Assist Libraries**<br>True|
-|**Enable TypeScript**<br>True|
-|**Add Eslint configuration**<br>True, see https://www.npmjs.com/package/eslint-plugin-fiori-custom for the eslint rules.|
-|**Main Entity**<br>ZC_SAPDEV_Material|
+# 3D Printer Materials
 
-## zsapdev3dpproduct
+Components and Tools of 3D Printers.
 
-3D Printer Components and Accessories
+## Features
 
-### Starting the generated app
+* TypeScript
+* Controller extension (`controller.ts`) for given Entity/Object Page only
+* re-declare module 'sap/ui/core/mvc/ControllerExtension' for easier inheritance in TS
+* Custom subsection fragments and event handlers
+* manifest.json configuration to use controller extension ( `controller.ts` ) as EventHandler for custom actions (instead of generated handler SomeName.ts )
+* Barcode rendering upon action
+* Opening a dialog fragment and rendering Barcode inside the dialog
 
--   This app has been generated using the SAP Fiori tools - App Generator, as part of the SAP Fiori tools suite.  To launch the generated application, run the following from the generated application root folder:
+## Backend
 
-```
-    npm start
-```
+[OData V4, RAP, Late Numbering](https://github.com/attilaberencsi/zsapdev_agit/tree/cloud/src/zsapdev_rap_sample/zsapdev_sample_rap_3d_print)
 
-- It is also possible to run the application using mock data that reflects the OData Service URL supplied during application generation.  In order to run the application with Mock Data, run the following from the generated app root folder:
+## Shots
 
-```
-    npm run start-mock
-```
-
-#### Pre-requisites:
-
-1. Active NodeJS LTS (Long Term Support) version and associated supported NPM version.  (See https://nodejs.org)
-
-
+![1762521624807](image/README/1762521624807.png)
