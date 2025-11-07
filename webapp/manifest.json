@@ -131,6 +131,7 @@
           "options": {
             "settings": {
               "contextPath": "/ZC_SAPDEV_Material",
+              "initialLoad": true,
               "variantManagement": "Page",
               "navigation": {
                 "ZC_SAPDEV_Material": {
