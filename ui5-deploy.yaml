@@ -24,7 +24,7 @@ builder:
           name: ZSAPDEV_3DM
           description: 3D Printer Components and Accessories
           package: ZSAPDEV_SAMPLE_UI_3D_PRINT
-          transport: H01K900002
+          transport: H01K900024
         exclude:
           - /test/
   resources:
