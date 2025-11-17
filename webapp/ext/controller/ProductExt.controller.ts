@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access, @typescript-eslint/no-unsafe-call, @typescript-eslint/no-explicit-any */
 import ControllerExtension from "sap/ui/core/mvc/ControllerExtension";
 import ExtensionAPI from "sap/fe/templates/ObjectPage/ExtensionAPI";
 import MessageToast from "sap/m/MessageToast";
@@ -17,7 +18,7 @@ export default class ProductExt extends ControllerExtension<ExtensionAPI> {
   private _oBarcodeDialog?: Dialog;
   private _partNumber?: string;
 
-  private _barCodeDialogId?: string;
+  private _barCodeDialogId: string;
 
   static overrides = {
     onInit(this: ProductExt) {
